@@ -30,7 +30,7 @@ collections:
       - { label: "본문", name: "body", widget: "markdown" }
 
   - name: "life-wisdom"
-    label: "처세"
+    label: "삶의 기술"
     folder: "content/life-wisdom"
     create: true
     slug: "{{slug}}"

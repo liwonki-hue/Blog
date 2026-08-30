@@ -38,6 +38,6 @@ enableRobotsTXT = true
     weight = 20
   [[menu.main]]
     identifier = "life-wisdom"
-    name = "처세"
+    name = "삶의 기술"
     url = "/life-wisdom/"
     weight = 30
