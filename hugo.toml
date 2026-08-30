@@ -1,3 +1,39 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = "/"
+languageCode = "ko-kr"
+title = "기록"
+theme = "PaperMod"
+paginate = 10
+
+enableRobotsTXT = true
+enableEmojiSearch = false
+
+[params]
+  env = "production"
+  defaultTheme = "auto"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = false
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = false
+  disableSpecial1stPost = true
+  hidemeta = false
+  comments = false
+
+[menu]
+  [[menu.main]]
+    identifier = "philosophy"
+    name = "철학"
+    url = "/philosophy/"
+    weight = 10
+  [[menu.main]]
+    identifier = "finance"
+    name = "재테크"
+    url = "/finance/"
+    weight = 20
+  [[menu.main]]
+    identifier = "life-wisdom"
+    name = "처세"
+    url = "/life-wisdom/"
+    weight = 30
