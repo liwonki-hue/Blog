@@ -1,0 +1,41 @@
+backend:
+  name: github
+  repo: liwonki-hue/Blog
+  branch: main
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "philosophy"
+    label: "철학"
+    folder: "content/philosophy"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "제목", name: "title", widget: "string" }
+      - { label: "날짜", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "태그", name: "tags", widget: "list", required: false, default: [] }
+      - { label: "본문", name: "body", widget: "markdown" }
+
+  - name: "finance"
+    label: "재테크"
+    folder: "content/finance"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "제목", name: "title", widget: "string" }
+      - { label: "날짜", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "태그", name: "tags", widget: "list", required: false, default: [] }
+      - { label: "본문", name: "body", widget: "markdown" }
+
+  - name: "life-wisdom"
+    label: "처세"
+    folder: "content/life-wisdom"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "제목", name: "title", widget: "string" }
+      - { label: "날짜", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "태그", name: "tags", widget: "list", required: false, default: [] }
+      - { label: "본문", name: "body", widget: "markdown" }
