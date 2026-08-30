@@ -20,6 +20,7 @@ enableEmojiSearch = false
   disableSpecial1stPost = true
   hidemeta = false
   comments = false
+  mainSections = ["philosophy", "finance", "life-wisdom"]
 
 [menu]
   [[menu.main]]
