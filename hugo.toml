@@ -22,6 +22,9 @@ enableRobotsTXT = true
   comments = false
   mainSections = ["philosophy", "finance", "life-wisdom"]
 
+  [params.assets]
+    theme_color = "#1e1e1e"
+
 [menu]
   [[menu.main]]
     identifier = "philosophy"
