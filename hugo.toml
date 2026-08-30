@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "ko-kr"
-title = "기록"
+title = "My Life Story"
 theme = "PaperMod"
 paginate = 10
 
@@ -9,7 +9,7 @@ enableEmojiSearch = false
 
 [params]
   env = "production"
-  defaultTheme = "auto"
+  defaultTheme = "light"
   subtitle = "Not bound by routine, I create my own destiny."
   ShowReadingTime = false
   ShowShareButtons = false
