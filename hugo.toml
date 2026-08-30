@@ -10,6 +10,7 @@ enableEmojiSearch = false
 [params]
   env = "production"
   defaultTheme = "auto"
+  subtitle = "Not bound by routine, I create my own destiny."
   ShowReadingTime = false
   ShowShareButtons = false
   ShowPostNavLinks = false

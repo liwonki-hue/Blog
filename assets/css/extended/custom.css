@@ -1,7 +1,104 @@
 :root {
   --main-width: 700px;
+  --sidebar-width: 200px;
 }
 
 body {
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+.site-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap);
+  max-width: calc(var(--nav-width) + var(--gap) * 2);
+  margin: 0 auto;
+  padding: var(--gap);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.site-hero-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.site-hero-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: var(--secondary);
+}
+
+.page-shell {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap);
+  max-width: calc(var(--nav-width) + var(--gap) * 2);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
+.sidebar {
+  flex: 0 0 var(--sidebar-width);
+  padding-top: var(--gap);
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  color: var(--primary);
+  font-size: 15px;
+}
+
+.sidebar-nav a:hover {
+  background: var(--entry);
+}
+
+.sidebar-nav a.active {
+  font-weight: 600;
+  background: var(--entry);
+}
+
+.page-shell .main {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .site-hero {
+    flex-direction: column;
+  }
+
+  .page-shell {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sidebar {
+    flex: none;
+    width: 100%;
+    padding: var(--gap) var(--gap) 0;
+  }
+
+  .sidebar-nav ul {
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
