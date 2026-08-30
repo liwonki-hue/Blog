@@ -1,3 +1,10 @@
+{{/*
+  사이트 오버라이드: themes/PaperMod/layouts/_partials/templates/schema_json.html
+  이유: baseURL이 "/"이고 breadcrumb 경로 세그먼트가 2개 이상일 때, 테마 원본의
+  breadcrumb position/comma 로직이 유효하지 않은 JSON을 생성해 `hugo --minify` 빌드가 실패함
+  (커밋 롤백으로 재현 및 확인 완료). PaperMod 서브모듈을 업데이트할 때 upstream에서
+  이 버그가 수정됐는지 확인하고, 수정됐다면 이 오버라이드를 삭제하고 테마 버전을 사용할 것.
+*/}}
 {{ if .IsHome }}
 <script type="application/ld+json">
 {
