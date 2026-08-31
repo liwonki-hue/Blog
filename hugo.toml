@@ -20,7 +20,7 @@ enableRobotsTXT = true
   disableSpecial1stPost = true
   hidemeta = false
   comments = false
-  mainSections = ["philosophy", "finance", "life-wisdom"]
+  mainSections = ["philosophy", "finance", "life-wisdom", "retirement"]
 
   [params.assets]
     theme_color = "#1e1e1e"
@@ -41,3 +41,8 @@ enableRobotsTXT = true
     name = "삶의 기술"
     url = "/life-wisdom/"
     weight = 30
+  [[menu.main]]
+    identifier = "retirement"
+    name = "은퇴 준비"
+    url = "/retirement/"
+    weight = 40
