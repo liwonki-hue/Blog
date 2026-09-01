@@ -109,4 +109,28 @@ body {
     overflow-x: auto;
     white-space: nowrap;
   }
+
+  body {
+    font-size: 16px;
+  }
+
+  .post-title {
+    font-size: 26px;
+  }
+
+  .md-content h1 {
+    font-size: 28px;
+  }
+
+  .md-content h2 {
+    font-size: 20px;
+  }
+
+  .md-content h3 {
+    font-size: 18px;
+  }
+
+  .md-content h4 {
+    font-size: 15px;
+  }
 }
