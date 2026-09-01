@@ -111,26 +111,26 @@ body {
   }
 
   body {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .post-title {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .md-content h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .md-content h2 {
-    font-size: 20px;
-  }
-
-  .md-content h3 {
     font-size: 18px;
   }
 
+  .md-content h3 {
+    font-size: 16px;
+  }
+
   .md-content h4 {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
