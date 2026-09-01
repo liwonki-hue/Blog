@@ -7,6 +7,14 @@ body {
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
+.post-title {
+  font-size: 32px;
+}
+
+.md-content h2 {
+  font-size: 24px;
+}
+
 .site-hero {
   display: flex;
   align-items: flex-start;
