@@ -8,7 +8,7 @@ public_folder: "/images/uploads"
 
 collections:
   - name: "philosophy"
-    label: "철학"
+    label: "철학 일기"
     folder: "content/philosophy"
     create: true
     slug: "{{slug}}"
@@ -19,7 +19,7 @@ collections:
       - { label: "본문", name: "body", widget: "markdown" }
 
   - name: "finance"
-    label: "재테크"
+    label: "투자 일기"
     folder: "content/finance"
     create: true
     slug: "{{slug}}"
@@ -43,6 +43,17 @@ collections:
   - name: "retirement"
     label: "은퇴 준비"
     folder: "content/retirement"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "제목", name: "title", widget: "string" }
+      - { label: "날짜", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "태그", name: "tags", widget: "list", required: false, default: [] }
+      - { label: "본문", name: "body", widget: "markdown" }
+
+  - name: "reading"
+    label: "독서 일기"
+    folder: "content/reading"
     create: true
     slug: "{{slug}}"
     fields:
