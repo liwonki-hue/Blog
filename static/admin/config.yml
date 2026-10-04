@@ -61,3 +61,14 @@ collections:
       - { label: "날짜", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - { label: "태그", name: "tags", widget: "list", required: false, default: [] }
       - { label: "본문", name: "body", widget: "markdown" }
+
+  - name: "ai-learning"
+    label: "AI 학습"
+    folder: "content/ai-learning"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "제목", name: "title", widget: "string" }
+      - { label: "날짜", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "태그", name: "tags", widget: "list", required: false, default: [] }
+      - { label: "본문", name: "body", widget: "markdown" }

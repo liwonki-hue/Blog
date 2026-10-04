@@ -20,7 +20,7 @@ enableRobotsTXT = true
   disableSpecial1stPost = true
   hidemeta = false
   comments = false
-  mainSections = ["philosophy", "finance", "life-wisdom", "retirement", "reading"]
+  mainSections = ["philosophy", "finance", "life-wisdom", "retirement", "reading", "ai-learning"]
 
   [params.assets]
     theme_color = "#1e1e1e"
@@ -51,3 +51,8 @@ enableRobotsTXT = true
     name = "독서 일기"
     url = "/reading/"
     weight = 50
+  [[menu.main]]
+    identifier = "ai-learning"
+    name = "AI 학습"
+    url = "/ai-learning/"
+    weight = 60
