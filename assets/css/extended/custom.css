@@ -29,12 +29,13 @@ body {
 .site-hero-inner {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 8px;
 }
 
 .site-hero-title {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   color: var(--primary);
 }
 
@@ -62,24 +63,38 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 4px;
 }
 
 .sidebar-nav a {
   display: block;
-  padding: 0.5rem 0.75rem;
+  padding: 8px 12px;
   border-radius: var(--radius);
-  color: var(--primary);
+  color: var(--secondary);
   font-size: 15px;
+  transition: color 0.15s ease, background-color 0.15s ease;
 }
 
 .sidebar-nav a:hover {
+  color: var(--primary);
   background: var(--entry);
 }
 
 .sidebar-nav a.active {
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--primary);
   background: var(--entry);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.post-entry {
+  transition: border-color 0.15s ease;
+}
+
+.post-entry:hover,
+.post-entry:focus-within,
+.post-entry:active {
+  transform: none;
 }
 
 .page-shell .main {
